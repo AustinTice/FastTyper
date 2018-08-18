@@ -1,7 +1,7 @@
 window.addEventListener('load', init);
 /*
    TODO:
-    - Add a button to begin the game with that fits appropriately with the UI.
+   - Set up the Play button to wait for an event and then trigger a function
 
 */
 
@@ -43,6 +43,7 @@ function startMatch(){
 }
 
 // Checks to see if the word that is input matches the given word.
+// Returns a boolean
 function matchWords(){
   if(inputTextBox.value === randomWord.innerHTML){
     gameStatus.innerHTML = "Correct, bitch.";
@@ -54,6 +55,7 @@ function matchWords(){
   }
 }
 
+// Triggered by waiting for the "Play" button to be clicked. Counts down the set time.
 function countdown(){
   // Make sure time has not run output
   if(time > 0){
