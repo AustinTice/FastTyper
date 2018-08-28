@@ -1,3 +1,5 @@
+
+// waits for the page to load and then runs the init function
 window.addEventListener('load', init);
 /*
    TODO:
