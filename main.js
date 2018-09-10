@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 // allows the timer to begin once the page loads
+=======
+
+// waits for the page to load and then runs the init function
+>>>>>>> 04f80342a969fc4956c0edb77650aea9eb828286
 window.addEventListener('load', init);
 
 /*
