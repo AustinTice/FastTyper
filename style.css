@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  border: 1px solid yellow;
 }
 
 /* Default class to help with the straightening of content */
@@ -99,6 +98,7 @@ header p {
 .timeLeftAndScore{
   display: flex;
   align-items: center;
+  padding: 0px 20px;
   justify-content: space-between;
   height: 25%;
 }
