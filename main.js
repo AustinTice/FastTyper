@@ -1,8 +1,10 @@
+// allows the timer to begin once the page loads
 window.addEventListener('load', init);
+
 /*
    TODO:
    - Set up the Play button to wait for an event and then trigger a function
-
+   - Fix UI where input is jumping up and down on each input being put in.
 */
 
 // This is our random list of exactly 100 words
@@ -46,7 +48,7 @@ function startMatch(){
 // Returns a boolean
 function matchWords(){
   if(inputTextBox.value === randomWord.innerHTML){
-    gameStatus.innerHTML = "Correct, bitch.";
+    gameStatus.innerHTML = "Correct!";
     return true;
   }
   else{
@@ -70,7 +72,7 @@ function countdown(){
 // Check to see if the word that was input into the box is the correct word
 function checkStatus(){
   if(!isPlaying && time === 0){
-    gameStatus.innerHTML = "Game over bitch"
+    gameStatus.innerHTML = "Game over :(";
     score = 0;
   }
 }
